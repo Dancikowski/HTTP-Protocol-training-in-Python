@@ -12,6 +12,7 @@ app.config['JSON_SORT_KEYS'] = False
 @app.route('/product', methods=['POST'])
 def hello():
 
+   print("A")
    data = request.get_json()
 
    if validation(json.loads(json.dumps(data))):
